@@ -1,0 +1,159 @@
+ 
+ html {
+  scroll-behavior: smooth;
+ } 
+/* ===== Body & Font ===== */
+/* تابع لعنصر <body> لتحديد الخط العام للموقع */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+
+/* ===== Hero Section ===== */
+/* تابع لقسم الهيرو <section id="home" class="hero"> */
+.hero {
+  height: 100vh;
+  background: url("../images/hero.jpg") center/cover;
+  color: white;
+  
+}
+
+  /* <div class="overlay">داخل الهيرو overlay تابع لل*/
+.overlay {
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Dark Mode ===== */
+/* تابع للجسم عند الضغط على زر الوضع الداكن <button id="darkModeBtn"> */
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+ 
+
+ 
+/* ===== Hover Effect on Service Cards ===== */
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Hover Effect on Card Images ===== */
+
+.card img {
+  transition: transform 0.4s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+} 
+.card { 
+overflow: hidden;
+}
+
+/* ===== Custom Table Styling ===== */
+.custom-table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+custom-table thead th {
+  background-color: #198754;  
+  color: white;
+  text-align: center;
+}
+.custom-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.custom-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e9f7ef;
+}
+.status-available {
+  color: green;
+  font-weight: bold;
+}
+
+.status-complete {
+  color: red;
+  font-weight: bold;
+}
+  /* ===== Contact Form ===== */
+/* تابع لقسم التواصل <section id="contact" class="container my-5"> */
+/* تنسيق النموذج <form id="contactForm"> */
+
+  #contactForm {
+  display: flex;
+  flex-direction: column;   /* ترتيب الحقول عمودي */
+  align-items: flex-end;      /* مركز الحقول أفقياً */
+  gap: 15px;                /* مسافة بين الحقول */
+  padding: 20px;            /* مساحة داخلية للفورم */
+  background-color: #f8f9fa; /* لون خلفية خفيف */
+  border-radius: 12px;      /* زوايا دائرية */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* ظل خفيف */
+  max-width: 600px;         /* الحد الأقصى للعرض */
+  margin: 0 0 0 auto;           /* لتكون في وسط الصفحة */
+}
+
+ /* الحقول داخل النموذج <input> و <textarea> */
+ #contactForm.form-control {
+  width:80%;               /* حجم مناسب للحقول */
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;       /* زوايا دائرية للحقول */
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+ /* تأثير التركيز على الحقول */
+#contactForm.form-control:focus {
+  border-color: #198754;  /* أخضر */
+  box-shadow: 0 0 8px rgba(25,135,84,0.3);
+  outline: none;
+}
+
+ /* زر الإرسال <button class="btn btn-success"> */
+#contactForm .btn-success {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+/* ===== FAQ / Accordion ===== */
+/* تابع لقسم الأسئلة الشائعة <div class="accordion" id="faq"> */
+.accordion-button {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+ .video-wrapper {
+  width: 450%;           /* يأخذ 90% من عرض الشاشة */
+  max-width: 450px;     /* الحد الأقصى للعرض */
+  aspect-ratio: 1/1;    /* يجعل العرض = الارتفاع تلقائياً → مربع */
+  margin: 0 auto;       /* لتوسيط الفيديو في الصفحة */
+  overflow: hidden;     /* إخفاء أي جزء زائد */
+}
+
+ .video-wrapper video {
+  width: 100%;          /* الفيديو يملأ div بالكامل */
+  height: 100%;         /* الفيديو يملأ div بالكامل */
+  object-fit: cover;    /* يجعل الفيديو يتناسب داخل المربع بدون تشويه */
+}
+
+
+
+
+
